@@ -1,0 +1,25 @@
+/* BODY */
+
+.body {
+  padding-inline: 20px;
+  background-color: var(--background-color, #000);
+  color: var(--color, #fff);
+}
+
+/* HEADER */
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  justify-content: space-between;
+}
+
+/* LOGO */
+
+.logo {
+  width: 80px;
+}
+
+.logo__image {
+  object-fit: contain;
+}
