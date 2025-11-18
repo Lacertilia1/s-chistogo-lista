@@ -20,12 +20,16 @@
 
 .aligned-text--right {
   text-align: right;
+  transform: translateX(-5px);
 }
 
 /* BODY */
 
 .body {
   color: var(--color-primary, #fff);
+  font-family: var(--font-family-primary, Inter, Arial, Verdana, sans-serif);
+  font-size: 16px;
+  line-height: 1.35;
   background-color: var(--background-color, #000);
 }
 
@@ -35,11 +39,9 @@
   display: grid;
   grid-template-columns: repeat(2, min-content);
   justify-content: space-between;
+  min-block-size: 132px;
   padding-inline: var(--padding, 20px);
   padding-block: 24px;
-  font-family: var(--font-family-main, Inter, Arial, Verdana, sans-serif);
-  font-size: 16px;
-  line-height: 1.35;
 }
 
 /* LOGO */
@@ -74,6 +76,7 @@
 
 .main {
   padding-inline: var(--padding, 20px);
+  padding-block-start: 7px;
   background-image: url(../images/svg/cover.svg);
   background-repeat: no-repeat;
   background-size: 95%;
@@ -82,7 +85,34 @@
 }
 
 .main__title {
+  margin-block-end: 34px;
   font-weight: 400;
   font-size: 72px;
   line-height: 1;
+}
+
+/* SECTION */
+
+.section {
+  display: grid;
+}
+
+.section--intro {
+  gap: 24px;
+}
+
+.section__header {
+  display: flex;
+  color: var(--color-gray, #ccc);
+}
+
+.section__title {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.section__date {
+  white-space: nowrap;
 }
