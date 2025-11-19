@@ -4,6 +4,12 @@
   font-family: var(--font-family-secondary, 'EB Garamond', 'Times New Roman', Georgia,  serif);
 }
 
+/* TEXT */
+
+.text--fw_bold {
+  font-weight: 700;
+}
+
 /* ALIGNED-TEXT */
 
 .aligned-text {
@@ -20,17 +26,20 @@
 
 .aligned-text--right {
   text-align: right;
+}
+
+.main__title .aligned-text--right {
   transform: translateX(-5px);
 }
 
 /* BODY */
 
 .body {
-  color: var(--color-primary, #fff);
+  color: var(--color-primary, #f5f5f5);
   font-family: var(--font-family-primary, Inter, Arial, Verdana, sans-serif);
   font-size: 16px;
   line-height: 1.35;
-  background-color: var(--background-color, #000);
+  background-color: var(--background-color-primary, #000);
 }
 
 /* HEADER */
@@ -54,7 +63,7 @@
 .logo__image {
   inline-size: 100%;
   block-size: 100%;
-  fill: var(--color-primary, #fff);
+  fill: var(--color-white, #fff);
 }
 
 /* NAV */
@@ -75,7 +84,6 @@
 /* MAIN */
 
 .main {
-  padding-inline: var(--padding, 20px);
   padding-block-start: 7px;
   background-image: url(../images/svg/cover.svg);
   background-repeat: no-repeat;
@@ -85,7 +93,7 @@
 }
 
 .main__title {
-  margin-block-end: 34px;
+  padding-inline: var(--padding, 20px);
   font-weight: 400;
   font-size: 72px;
   line-height: 1;
@@ -95,10 +103,19 @@
 
 .section {
   display: grid;
+  gap: 32px;
+  padding-inline: var(--padding, 20px);
+  padding-block: 40px;
+}
+
+.section--theme_alternative {
+  color: var(--color-secondary, #f5f5f5);
+  background-color: var(--background-color-secondary, #fee42a);
 }
 
 .section--intro {
   gap: 24px;
+  padding-block: 35px 38px;
 }
 
 .section__header {
@@ -107,12 +124,31 @@
 }
 
 .section__title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.15;
+}
+
+.section__title--size_s {
   font-family: inherit;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
 }
 
 .section__date {
   white-space: nowrap;
+}
+
+.section__lead {
+  font-size: 20px;
+  word-spacing: 2px;
+}
+
+.section__list {
+  display: grid;
+  gap: 16px;
+  padding-inline-start: 20px;
+  font-size: 16px;
+  list-style: initial;
 }
