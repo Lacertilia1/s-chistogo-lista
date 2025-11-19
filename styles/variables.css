@@ -1,7 +1,10 @@
 :root {
-  --color-primary: #fff;
+  --color-primary: #f5f5f5;
+  --color-secondary: #131313;
+  --color-white: #fff;
   --color-gray: #ccc;
-  --background-color: #000;
+  --background-color-primary: #000;
+  --background-color-secondary: #fee42a;
   --font-family-primary: Inter, Arial, Verdana, sans-serif;
   --font-family-secondary: 'EB Garamond', 'Times New Roman', Georgia,  serif;
   --padding: 20px;
