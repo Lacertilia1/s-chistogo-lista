@@ -1,7 +1,13 @@
 /* TITLE */
 
 .title {
-  font-family: var(--font-family-secondary, 'EB Garamond', 'Times New Roman', Georgia,  serif);
+  font-family: var(
+    --font-family-secondary,
+    'EB Garamond',
+    'Times New Roman',
+    Georgia,
+    serif
+  );
 }
 
 /* TEXT */
@@ -90,6 +96,7 @@
   background-size: 95%;
   background-position-y: 30px;
   background-position-x: var(--padding, 20px);
+  margin-block-end: 20px;
 }
 
 .main__title {
@@ -142,7 +149,6 @@
 
 .section__lead {
   font-size: 20px;
-  word-spacing: 2px;
 }
 
 .section__list {
@@ -151,4 +157,62 @@
   padding-inline-start: 20px;
   font-size: 16px;
   list-style: initial;
+}
+
+/* CARD-LIST */
+
+.card-list {
+  display: grid;
+  gap: 32px;
+}
+
+/* CARD */
+
+.card {
+  display: grid;
+  gap: 8px;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: var(--background-color-card, #343434);
+}
+
+.card--theme_alternative {
+  background-color: var(--background-color-secondary, #fee42a);
+  color: var(--color-secondary, #131313);
+}
+
+.card__image {
+  max-inline-size: 100px;
+  aspect-ratio: 1 / 1;
+}
+
+.card__author {
+  font-weight: 700;
+}
+
+.card__title {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+/* FOOTER */
+
+.footer {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: space-between;
+  align-items: center;
+  border-block-start: 1px solid var(--background-color-secondary, #fee42a);
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__social-link {
+  font-size: 14px;
+  line-height: 1.25;
+  text-decoration: none;
 }
