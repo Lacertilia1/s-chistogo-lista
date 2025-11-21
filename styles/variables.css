@@ -5,7 +5,8 @@
   --color-gray: #ccc;
   --background-color-primary: #000;
   --background-color-secondary: #fee42a;
+  --background-color-card: #343434;
   --font-family-primary: Inter, Arial, Verdana, sans-serif;
-  --font-family-secondary: 'EB Garamond', 'Times New Roman', Georgia,  serif;
+  --font-family-secondary: 'EB Garamond', 'Times New Roman', Georgia, serif;
   --padding: 20px;
 }
