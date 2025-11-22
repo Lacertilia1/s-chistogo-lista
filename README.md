@@ -5,6 +5,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
+<img width="1440" height="876" alt="Screenshot 2025-11-22 at 17 31 54" src="https://github.com/user-attachments/assets/97274be3-2561-422f-b306-e452623c6f52" />
+
+
 ## 💡 О чём этот сайт?
 
 Этот проект — **небольшое веб-эссе**, превращённое в одностраничный сайт.
